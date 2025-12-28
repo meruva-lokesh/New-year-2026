@@ -95,20 +95,7 @@ body::before {
    =================================== */
 
 .cursor-trail {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--primary);
-    pointer-events: none;
-    z-index: 10000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    mix-blend-mode: difference;
-}
-
-body:hover .cursor-trail {
-    opacity: 0.6;
+    display: none !important;
 }
 
 /* ===================================
@@ -1571,5 +1558,42 @@ body.dark-mode .vision-card-back {
     .entry-btn {
         padding: 0.8rem 2rem;
         font-size: 1rem;
+    }
+    
+    /* Secret message mobile optimization */
+    .secret-button {
+        padding: 1rem 1.5rem !important;
+        font-size: 0.95rem !important;
+        border-radius: 40px !important;
+        line-height: 1.5 !important;
+        max-width: 90% !important;
+        margin: 0 auto !important;
+        display: inline-block !important;
+    }
+    
+    .secret-message-trigger {
+        padding: 0 1.5rem !important;
+    }
+    
+    .secret-message-trigger p {
+        font-size: 0.95rem !important;
+    }
+    
+    .secret-message {
+        padding: 2rem 1.5rem !important;
+        margin-top: 2rem !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+        border-radius: 20px !important;
+    }
+    
+    .secret-message h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    .secret-message p {
+        font-size: 1rem !important;
+        line-height: 1.8 !important;
     }
 }

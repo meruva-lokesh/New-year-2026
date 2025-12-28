@@ -40,9 +40,6 @@
     <!-- Main Content (hidden initially) -->
     <div class="main-content" id="mainContent" style="display: none;">
     
-    <!-- Cursor Trail -->
-    <div class="cursor-trail"></div>
-    
     <!-- Progress Indicator -->
     <div class="progress-bar"></div>
     
@@ -51,24 +48,6 @@
         <span class="sun">☀️</span>
         <span class="moon">🌙</span>
     </button>
-
-    <!-- Sound Toggle -->
-    <button class="sound-toggle" aria-label="Toggle sound">
-        <span class="sound-on">🔊</span>
-        <span class="sound-off">🔇</span>
-    </button>
-
-    <!-- Navigation -->
-    <nav class="experimental-nav">
-        <div class="nav-dots">
-            <span data-section="hero" class="active"></span>
-            <span data-section="journey"></span>
-            <span data-section="memories"></span>
-            <span data-section="message"></span>
-            <span data-section="photos"></span>
-            <span data-section="vision"></span>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -477,19 +456,19 @@
             </div>
             
             <!-- Hidden Secret Message -->
-            <div class="secret-message-trigger" style="margin-top: 4rem; text-align: center;">
-                <p class="reveal" style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Psst... there's something hidden here 🤫</p>
-                <button class="secret-button glass-morph" style="padding: 1rem 2rem; border: none; border-radius: 30px; cursor: pointer; font-size: 1rem; background: var(--gradient-sunset); color: white; font-weight: 600; transition: all 0.3s ease;">
+            <div class="secret-message-trigger" style="margin-top: 4rem; text-align: center; padding: 0 1rem;">
+                <p class="reveal" style="color: var(--text-light); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Psst... there's something hidden here 🤫</p>
+                <button class="secret-button glass-morph" style="padding: 1.2rem 2.5rem; border: none; border-radius: 50px; cursor: pointer; font-size: 1.1rem; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; font-weight: 700; transition: all 0.4s ease; box-shadow: 0 8px 25px rgba(250, 112, 154, 0.4); text-shadow: 0 2px 4px rgba(0,0,0,0.2); letter-spacing: 0.5px;">
                     Click if you remember our inside joke about... 🍦
                 </button>
             </div>
             
-            <div class="secret-message" style="display: none; margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; color: white; text-align: center; animation: fadeIn 0.5s ease;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: var(--font-handwritten);">You Remembered! 🎉</h3>
-                <p style="line-height: 1.8; font-size: 1.1rem;">
+            <div class="secret-message" style="display: none; margin-top: 2.5rem; padding: 2.5rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; color: white; text-align: center; box-shadow: 0 15px 50px rgba(102, 126, 234, 0.5); max-width: 100%; box-sizing: border-box; opacity: 1; transform: scale(1); transition: all 0.5s ease;">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; font-family: var(--font-handwritten); text-shadow: 0 2px 8px rgba(0,0,0,0.3);">You Remembered! 🎉</h3>
+                <p style="line-height: 2; font-size: 1.15rem; text-shadow: 0 1px 3px rgba(0,0,0,0.2); margin-bottom: 0;">
                     "Remember how we first met? You were my best friend's friend, and I never imagined we'd become this close. But then came that day when it was just us—no best friend, just you and me. That moment changed everything. That's when I saw you differently. That's when I realized you weren't just someone I knew through others—you were someone special in your own right. Someone I wanted to know more, someone I couldn't stop thinking about."
                 </p>
-                <p style="margin-top: 1.5rem; font-style: italic; opacity: 0.9;">
+                <p style="margin-top: 2rem; font-style: italic; opacity: 0.95; font-size: 1.1rem; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">
                     This is just between us. Our secret. Our story. From being my best friend's friend to being... well, us. ❤️
                 </p>
             </div>
