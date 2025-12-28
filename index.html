@@ -10,6 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Entry Screen -->
+    <div class="entry-screen" id="entryScreen">
+        <div class="entry-content">
+            <div class="entry-icon">💝</div>
+            <h1 class="entry-title">Hey there, beautiful! ✨</h1>
+            <p class="entry-message">I made something special just for you...</p>
+            <p class="entry-question">Would you like to see it?</p>
+            
+            <div class="entry-buttons">
+                <button class="entry-btn yes-btn" id="yesBtn">Yes! Show me 💖</button>
+                <button class="entry-btn no-btn" id="noBtn">Maybe later...</button>
+            </div>
+            
+            <p class="entry-hint" id="entryHint" style="display: none;">Come on, I know you're curious! 😊</p>
+        </div>
+    </div>
+    
+    <!-- Main Content (hidden initially) -->
+    <div class="main-content" id="mainContent" style="display: none;">
+    
     <!-- Cursor Trail -->
     <div class="cursor-trail"></div>
     
@@ -633,6 +653,9 @@
     <!-- Confetti Container -->
     <div class="confetti-container"></div>
 
+    </div>
+    <!-- End Main Content -->
+    
     <script src="script.js"></script>
 </body>
 </html>

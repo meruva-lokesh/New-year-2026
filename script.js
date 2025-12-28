@@ -3,6 +3,7 @@
 // ===================================
 
 document.addEventListener('DOMContentLoaded', () => {
+    initializeEntryScreen();
     initializeCountdown();
     initializeParticles();
     initializeScrollAnimations();
@@ -20,6 +21,67 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeProgressBar();
     initializeSecretMessage();
 });
+
+// ===================================
+// ENTRY SCREEN
+// ===================================
+
+function initializeEntryScreen() {
+    const entryScreen = document.getElementById('entryScreen');
+    const mainContent = document.getElementById('mainContent');
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+    const entryHint = document.getElementById('entryHint');
+    
+    let noClickCount = 0;
+    
+    // When "Yes" is clicked
+    yesBtn.addEventListener('click', () => {
+        entryScreen.classList.add('hidden');
+        setTimeout(() => {
+            entryScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+            // Trigger animations
+            document.body.style.overflow = 'auto';
+        }, 500);
+    });
+    
+    // When "No" is clicked - make it emotional/sad
+    noBtn.addEventListener('click', () => {
+        noClickCount++;
+        
+        if (noClickCount === 1) {
+            entryHint.style.display = 'block';
+            entryHint.textContent = "Oh... okay. That makes me a little sad 🥺";
+            noBtn.textContent = "I'm sure...";
+        } else if (noClickCount === 2) {
+            entryHint.textContent = "I spent so much time making this for you... but it's okay 💔";
+            noBtn.textContent = "Still no...";
+            yesBtn.innerHTML = "Don't make me cry 🥺";
+        } else if (noClickCount === 3) {
+            entryHint.textContent = "I guess I'll just sit here feeling sad then... 😢";
+            noBtn.textContent = "Okay fine, show me";
+            yesBtn.innerHTML = "Please? I miss you 💕";
+        } else {
+            // After 3 clicks, clicking "no" actually shows the site
+            entryScreen.classList.add('hidden');
+            setTimeout(() => {
+                entryScreen.style.display = 'none';
+                mainContent.style.display = 'block';
+                document.body.style.overflow = 'auto';
+            }, 500);
+        }
+        
+        // Make the button move away (fun effect)
+        const randomX = Math.random() * 20 - 10;
+        const randomY = Math.random() * 20 - 10;
+        noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        setTimeout(() => {
+            noBtn.style.transform = '';
+        }, 300);
+    });
+}
+
 
 // ===================================
 // COUNTDOWN TIMER
