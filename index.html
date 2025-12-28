@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here's to Us in 2026 ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+    
+    <!-- Progress Indicator -->
+    <div class="progress-bar"></div>
+    
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+    <!-- Sound Toggle -->
+    <button class="sound-toggle" aria-label="Toggle sound">
+        <span class="sound-on">🔊</span>
+        <span class="sound-off">🔇</span>
+    </button>
+
+    <!-- Music Player -->
+    <div class="music-player glass-morph">
+        <button class="music-toggle" aria-label="Toggle music">
+            <span class="music-play">▶️</span>
+            <span class="music-pause">⏸️</span>
+        </button>
+        <div class="music-info">
+            <div class="music-title">Our Song</div>
+            <input type="range" class="volume-control" min="0" max="100" value="50" aria-label="Volume">
+        </div>
+    </div>
+
+    <!-- Audio Element - Add your own song file -->
+    <audio id="backgroundMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="experimental-nav">
+        <div class="nav-dots">
+            <span data-section="hero" class="active"></span>
+            <span data-section="journey"></span>
+            <span data-section="memories"></span>
+            <span data-section="message"></span>
+            <span data-section="photos"></span>
+            <span data-section="vision"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="particle-container"></div>
+        <div class="hero-content">
+            <h1 class="kinetic-title">
+                <span class="word" data-word="Here's">Here's</span>
+                <span class="word" data-word="to">to</span>
+                <span class="word" data-word="Us">Us</span>
+                <span class="word" data-word="in">in</span>
+                <span class="word highlight" data-word="2026">2026</span>
+            </h1>
+            <p class="hero-subtitle">To the friend who means the world to me</p>
+            
+            <!-- 3D Countdown Timer -->
+            <div class="countdown-container glass-morph">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Personal Letter Section -->
+    <section class="letter-section" style="padding: 6rem 2rem; background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(254, 202, 202, 0.1) 100%);">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title reveal" style="margin-bottom: 3rem;">A Letter From My Heart 💌</h2>
+            <div class="letter-content glass-morph" style="padding: 3rem; line-height: 2; font-size: 1.1rem; color: var(--text-dark); text-align: left;">
+                <p class="reveal" style="margin-bottom: 1.5rem;">Dear Gayathri Navya,</p>
+                
+                <p class="reveal" style="margin-bottom: 1.5rem; text-indent: 2rem;">
+                    As we step into 2026, I wanted to create something that captures what you mean to me. This isn't just a website—it's a promise, a memory, and a celebration of us.
+                </p>
+                
+                <p class="reveal" style="margin-bottom: 1.5rem; text-indent: 2rem;">
+                    From the moment we met, my world changed. You brought colors I didn't know existed, laughter that echoed in places I kept silent, and a warmth that melted every wall I built. You're not just someone special—you're the person who makes every ordinary moment extraordinary.
+                </p>
+                
+                <p class="reveal" style="margin-bottom: 1.5rem; text-indent: 2rem;">
+                    I know we're navigating something beautiful and undefined—more than friends, exploring what we could be. And honestly? That's perfect. Because what matters isn't labels, but this: when I think about my future, I see you in it. Your smile, your voice, the way you make me feel understood without saying a word.
+                </p>
+                
+                <p class="reveal" style="margin-bottom: 1.5rem; text-indent: 2rem;">
+                    This year, I want us to create memories that we'll talk about decades from now. I want to be there for your highs and lows, to celebrate your wins, and to remind you how incredible you are on the hard days. I want to explore, laugh, dream, and grow—together.
+                </p>
+                
+                <p class="reveal" style="margin-bottom: 1.5rem; text-indent: 2rem;">
+                    So here's to 2026—a year of possibilities, adventures, and us. Thank you for being you, for letting me be part of your world, and for making me believe in magic again.
+                </p>
+                
+                <p class="reveal" style="margin-top: 2rem; text-align: right; font-family: var(--font-handwritten); font-size: 1.5rem;">
+                    Forever yours,<br>
+                    Lokesh ❤️
+                </p>
+            </div>
+            <p class="reveal" style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: var(--text-light); font-style: italic;">
+                Created with love on December 28, 2025
+            </p>
+        </div>
+    </section>
+
+    <!-- Journey Section (Parallax) -->
+    <section id="journey" class="journey-section">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="journey-content">
+            <h2 class="section-title reveal">Our Story in 2025</h2>
+            <p class="journey-text reveal">You're that rare kind of person who's so much more than just a friend. Every moment with you feels special - the deep talks, the inside jokes, the comfortable silences. As we step into 2026, I'm grateful for this beautiful connection we share.</p>
+            <div class="timeline">
+                <div class="timeline-item reveal" data-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-morph">
+                        <h3>September - New Beginnings</h3>
+                        <p>Where it all started getting even more special...</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-morph">
+                        <h3>October - Adventures</h3>
+                        <p>It is when our first fight happened, but we grew stronger from it.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-morph">
+                        <h3>Now - Looking Forward</h3>
+                        <p>Ready to write new chapters together...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Gallery -->
+    <section id="memories" class="memory-section">
+        <h2 class="section-title reveal">Moments to Treasure</h2>
+        <div class="memory-gallery">
+            <div class="memory-card reveal" data-delay="100">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>First Adventure</h3>
+                        <p>That day when we discovered something new together and couldn't stop smiling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-card reveal" data-delay="200">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Unexpected Joy</h3>
+                        <p>The spontaneous moments that turned into the best memories.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-card reveal" data-delay="300">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Quiet Moments</h3>
+                        <p>Sometimes the simplest times together mean the most.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-card reveal" data-delay="400">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Inside Jokes</h3>
+                        <p>You know exactly which moments I'm talking about! 😊</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-card reveal" data-delay="500">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Growth Together</h3>
+                        <p>Watching us both become better versions of ourselves.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-card reveal" data-delay="600">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="memory-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                        <div class="memory-overlay">
+                            <span>Click to reveal</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Looking Ahead</h3>
+                        <p>So many more memories waiting to be made in 2026.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <h2 class="section-title reveal">From My Heart</h2>
+            <div class="message-cards">
+                <div class="message-card soft-ui reveal" data-delay="100">
+                    <div class="message-content">
+                        <p>What we have is special - it's that rare kind of friendship that feels like so much more. You understand me in ways most people don't, and being around you just feels right.</p>
+                        <span class="reveal-more" data-target="hidden-1">Click to see more ✨</span>
+                        <p class="hidden-message" id="hidden-1">Every conversation with you brightens my day. You're my person - the one I want to share everything with, from silly moments to deep thoughts.</p>
+                    </div>
+                </div>
+                <div class="message-card soft-ui reveal" data-delay="200">
+                    <div class="message-content">
+                        <p class="handwritten">We're not just friends... we're us. And that's something beautiful.</p>
+                        <span class="reveal-more" data-target="hidden-2">Click to see more ✨</span>
+                        <p class="hidden-message" id="hidden-2">Thank you for being the kind of person who makes me feel seen, heard, and valued. You mean more to me than words can say.</p>
+                    </div>
+                </div>
+                <div class="message-card soft-ui reveal" data-delay="300">
+                    <div class="message-content">
+                        <p>As we step into 2026, I want you to know that I'm here for all of it—the late-night talks, the adventures, the dreams we chase, the quiet moments when we just get each other.</p>
+                        <span class="reveal-more" data-target="hidden-3">Click to see more ✨</span>
+                        <p class="hidden-message" id="hidden-3">I will always be fighting with you rather than leaving you 🥂</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photos" class="photo-gallery-section">
+        <h2 class="section-title">Our Moments Together 📸</h2>
+        <p class="gallery-subtitle">Click on any photo to view it larger</p>
+        
+        <div class="photo-grid">
+            <div class="photo-item reveal" data-delay="100">
+                <div class="photo-wrapper">
+                    <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 100%; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 20px; position: relative; overflow: hidden;">
+                        <span style="font-size: 4rem; margin-bottom: 1rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));">📷</span>
+                        <p style="color: white; font-size: 1.2rem; padding: 0 2rem; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.3); line-height: 1.6;">The first photo we'll take together in 2026</p>
+                    </div>
+                </div>
+                <div class="photo-description">First Memory Awaits</div>
+            </div>
+            
+            <div class="photo-item reveal" data-delay="200">
+                <div class="photo-wrapper">
+                    <div class="photo-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); width: 100%; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 20px; position: relative; overflow: hidden;">
+                        <span style="font-size: 4rem; margin-bottom: 1rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));">💫</span>
+                        <p style="color: white; font-size: 1.2rem; padding: 0 2rem; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.3); line-height: 1.6;">The adventures we'll share</p>
+                    </div>
+                </div>
+                <div class="photo-description">Adventures to Come</div>
+            </div>
+        </div>
+        
+        
+        <div class="photo-caption" style="text-align: center; margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <p style="font-size: 1.2rem; color: var(--text-light); line-height: 1.8; font-style: italic;">These spaces are waiting to be filled with our memories.</p>
+            <p style="font-size: 1.2rem; color: var(--text-light); line-height: 1.8; font-style: italic;">Here's to creating beautiful moments together in 2026 that we'll treasure forever.</p>
+        </div>
+    </section>
+
+    <!-- Reasons Why You're Amazing Section -->
+    <section class="reasons-section" style="padding: 6rem 2rem; background: linear-gradient(135deg, rgba(250, 112, 154, 0.1) 0%, rgba(252, 211, 77, 0.1) 100%);">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title reveal" style="margin-bottom: 2rem;">50 Reasons Why You're Amazing ✨</h2>
+            <p class="reveal" style="text-align: center; color: var(--text-light); margin-bottom: 4rem; font-size: 1.1rem;">Click any reason to see a special message just for you</p>
+            
+            <div class="reasons-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem;">
+                
+                <div class="reason-item glass-morph reveal" data-delay="50" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <div class="reason-front">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">😊</span>
+                        <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your smile lights up my entire day</p>
+                    </div>
+                    <div class="reason-back" style="display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 1.5rem; background: var(--gradient-sunset); color: white; display: flex; align-items: center; justify-content: center; opacity: 0;">
+                        <p style="font-size: 0.85rem; font-style: italic;">Seriously, even on my worst days, thinking of your smile makes everything better</p>
+                    </div>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="100" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💭</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">The way you listen without judgment</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="150" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌟</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your kindness to everyone around you</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="200" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">😂</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your contagious laughter</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="250" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💪</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">How strong you are, even when you don't see it</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="300" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎨</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your unique perspective on life</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="350" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">✨</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">The way you make ordinary moments special</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="400" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💝</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your caring heart</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="450" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌈</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">You bring color to my world</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="500" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎯</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your determination to achieve your dreams</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="550" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">📚</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your intelligence and curiosity</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="600" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🤗</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">The warmth you bring to every room</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="650" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎵</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your taste in music (and everything else)</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="700" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💬</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">How our conversations never get boring</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="750" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌙</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Those late night talks we have</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="800" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">👀</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your beautiful eyes that speak volumes</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="850" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎭</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">You can be goofy and serious perfectly</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="900" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🍕</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">We have the best food adventures</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="950" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎮</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Even our silly moments are memorable</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="1000" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌻</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">Your positive energy is infectious</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="1050" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎁</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">You remember the little things I tell you</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="1100" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🦋</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">The way you've grown and evolved</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="1150" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌟</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">You inspire me to be better</p>
+                </div>
+
+                <div class="reason-item glass-morph reveal" data-delay="1200" style="padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💫</span>
+                    <p style="color: var(--text-dark); font-weight: 500; font-size: 0.9rem;">You make me believe in magic</p>
+                </div>
+
+            </div>
+            
+            <!-- Hidden Secret Message -->
+            <div class="secret-message-trigger" style="margin-top: 4rem; text-align: center;">
+                <p class="reveal" style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Psst... there's something hidden here 🤫</p>
+                <button class="secret-button glass-morph" style="padding: 1rem 2rem; border: none; border-radius: 30px; cursor: pointer; font-size: 1rem; background: var(--gradient-sunset); color: white; font-weight: 600; transition: all 0.3s ease;">
+                    Click if you remember our inside joke about... 🍦
+                </button>
+            </div>
+            
+            <div class="secret-message" style="display: none; margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; color: white; text-align: center; animation: fadeIn 0.5s ease;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: var(--font-handwritten);">You Remembered! 🎉</h3>
+                <p style="line-height: 1.8; font-size: 1.1rem;">
+                    "Remember how we first met? You were my best friend's friend, and I never imagined we'd become this close. But then came that day when it was just us—no best friend, just you and me. That moment changed everything. That's when I saw you differently. That's when I realized you weren't just someone I knew through others—you were someone special in your own right. Someone I wanted to know more, someone I couldn't stop thinking about."
+                </p>
+                <p style="margin-top: 1.5rem; font-style: italic; opacity: 0.9;">
+                    This is just between us. Our secret. Our story. From being my best friend's friend to being... well, us. ❤️
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Lightbox -->
+    <div class="photo-lightbox" id="photoLightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- My Promises Section -->
+    <section class="promises-section" style="padding: 6rem 2rem; background: var(--bg-dark);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title reveal" style="margin-bottom: 4rem;">My Promises to You in 2026 🤝</h2>
+            <div class="promises-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="100">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">🌟</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Always Be There</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Whether you need someone to talk to at 2 AM or someone to celebrate your smallest wins, I'll be there. Always.</p>
+                </div>
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="200">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">💫</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Make You Smile</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Your happiness matters to me. I promise to find new ways to make you laugh, even on the toughest days.</p>
+                </div>
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="300">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">🎯</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Support Your Dreams</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Whatever you want to achieve, wherever you want to go—I'll be your biggest cheerleader and strongest support.</p>
+                </div>
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="400">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">🗺️</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Create Adventures</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">From spontaneous road trips to trying new restaurants, let's fill this year with experiences we'll never forget.</p>
+                </div>
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="500">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">🎁</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Cherish Every Moment</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">I promise to be present, to listen deeply, and to treasure every conversation, every laugh, every moment with you.</p>
+                </div>
+                
+                <div class="promise-card glass-morph reveal" style="padding: 2rem; text-align: center;" data-delay="600">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">💝</span>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;">Show You How Special You Are</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">Every single day, in big ways and small, I'll remind you how incredible, beautiful, and irreplaceable you are.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Board -->
+    <section id="vision" class="vision-section">
+        <h2 class="section-title reveal">Our 2026 Vision</h2>
+        <p class="vision-subtitle reveal">Click each card to reveal our hopes and dreams</p>
+        <div class="vision-cards-collected">
+            <span id="cards-collected">0</span> / 6 cards collected
+        </div>
+        <div class="vision-board">
+            <div class="vision-card" data-card="1">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">🌟</span>
+                        <span class="card-label">Card 1</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>New Adventures</h3>
+                        <p>Let's explore new places and create unforgettable experiences together.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-card" data-card="2">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">💫</span>
+                        <span class="card-label">Card 2</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>Personal Growth</h3>
+                        <p>I just want to you to be the best version of yourself.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-card" data-card="3">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">🎨</span>
+                        <span class="card-label">Card 3</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>Creative Projects</h3>
+                        <p>Building and creating things that inspire us and bring us joy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-card" data-card="4">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">🌸</span>
+                        <span class="card-label">Card 4</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>Our Special Bond</h3>
+                        <p>More heart-to-heart talks, understanding each other without words, and cherishing this beautiful connection we have.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-card" data-card="5">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">✨</span>
+                        <span class="card-label">Card 5</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>Laughter & Joy</h3>
+                        <p>Never losing sight of the fun and laughter that makes life beautiful.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-card" data-card="6">
+                <div class="vision-card-inner">
+                    <div class="vision-card-front">
+                        <span class="card-icon">🎭</span>
+                        <span class="card-label">Card 6</span>
+                    </div>
+                    <div class="vision-card-back">
+                        <h3>Being Present</h3>
+                        <p>Cherishing every moment and being truly present together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-message glass-morph" id="finalMessage">
+            <h2>You've discovered all our dreams! 🎉</h2>
+            <p>Here's to making every single one of them come true in 2026. You're more than a friend to me - you're my favorite person, my safe space, my partner in crime. Thank you for this incredible bond we share. Whatever label we put on it doesn't matter - what matters is that it's real, it's special, and it's us. Here's to our journey together! 🥂✨</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="handwritten">Made with 💖 for my favorite person</p>
+        <p class="footer-year">2025 → 2026</p>
+    </footer>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
